@@ -1,0 +1,9 @@
+mixin navlink(href, test, isButton = false)
+    .nav 
+        if isButton
+      button#darkButton(type='button') #{text}
+    else
+      a(href=href) #{text}
+
+mixin navbar
+    +navLink('/main', 'Home')
